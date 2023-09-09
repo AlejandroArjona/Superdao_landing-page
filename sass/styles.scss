@@ -1,6 +1,5 @@
 //variables generales
 $principal-font: 'Montserrat', sans-serif;
-$secondary-font: 'loos-normal', sans-serif;
 $main-text-color: #fff;
 $card-text-color: #000;
 
@@ -43,6 +42,65 @@ header{//empezamos a estilizar el header para mobile
             display: none;
         }
     }    
+}
+
+main{//Estilizamos el main para que este crezca a un width especifico
+    display: flex;
+    justify-content: center;
+    max-width: 328px;
+    margin: 0 auto;
+
+    .hero{//Se estiliza el hero-section 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+
+        h1, p{//Damos estilos en comun al titulo y al parrafo dentro del hero
+            color: $main-text-color;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: $principal-font;
+        }
+
+        h1{
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+        }
+
+        p{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            margin-top: 16px;
+        }
+
+        .hero-button{//Damos estilos al hero-button
+            button{
+                //Posicionamiento
+                margin-top: 40px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                //shapes & sizes
+                width: 145px;
+                height: 46px;
+                border-radius: 12px;
+                //colors
+                background-color: #FFCF01;
+                box-shadow: 0px 7px 36px 0px rgba(255, 207, 1, 0.20);
+                //fonts
+                font-family: $principal-font;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+    }
 }
 
 
@@ -104,6 +162,32 @@ header{//empezamos a estilizar el header para mobile
                 button:hover{//cuando pasemos el cursor por el login-button, este hara las sig. acciones
                     background-color: #5d84ad;
                     cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    main{//Se ajusta el nuevo width del main
+        max-width: 736px;
+        .hero{
+            h1{//cambiamos los font sizes del titulo y del parrafo
+                font-size: 56px;
+                line-height: 60px;
+            }
+
+            p{
+                font-size: 20px;
+                line-height: 34px;
+            }
+            .hero-button{
+                button{//Modificamos el size del hero-button
+                    width: 176px;
+                    height: 56px;
+                    font-size: 17px;
+                }
+                button:hover{//se le agregan estilos al boton
+                    cursor: pointer;
+                    transform: scale(1.2);
                 }
             }
         }
