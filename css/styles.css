@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0A1117;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+}
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+}
+header .header-container .header-nav, header .header-container .button {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  header {
+    height: 86px;
+  }
+  header .header-container {
+    width: 736px;
+    max-width: none;
+    padding: 0;
+  }
+  header .header-container .header-nav, header .header-container .button {
+    display: block;
+  }
+  header .header-container .header-hamburguer {
+    display: none;
+  }
+  header .header-container .header-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    gap: 24px;
+  }
+  header .header-container .login-button button {
+    width: 67px;
+    height: 31px;
+    border-radius: 8px;
+    background-color: #243241;
+    border: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 16px;
+    display: inline-flex;
+    gap: 12px;
+  }
+  header .header-container .login-button button:hover {
+    background-color: #5d84ad;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=styles.css.map */
