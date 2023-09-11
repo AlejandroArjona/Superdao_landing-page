@@ -32,6 +32,7 @@ header .header-container .header-nav, header .header-container .button {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 328px;
   margin: 0 auto;
@@ -77,6 +78,89 @@ main .hero .hero-button button {
   font-weight: 700;
   line-height: 30px;
 }
+main .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+main .projects h1, main .projects p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+main .projects h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+main .projects .projects-examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  max-width: 328px;
+  justify-content: center;
+  gap: 8px;
+}
+main .projects .projects-examples .project {
+  display: inline-flex;
+  height: 40px;
+  padding: 12px 14px;
+  border-radius: 45px;
+  background: #182632;
+  border: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+}
+main .projects .projects-examples .project1, main .projects .projects-examples .project6 {
+  color: #FFB4D3;
+}
+main .projects .projects-examples .project2 {
+  color: #FFC24C;
+}
+main .projects .projects-examples .project3 {
+  color: #D387F7;
+}
+main .projects .projects-examples .project4 {
+  color: #77E6FF;
+}
+main .projects .projects-examples .project5 {
+  color: #23C9DE;
+}
+main .projects .projects-examples .more {
+  color: #707F8D;
+}
+main .projects .projects-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 24px;
+}
+main .projects .projects-album img {
+  border-radius: 24px;
+}
+main .projects .projects-album button {
+  position: absolute;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #FFCF01;
+  box-shadow: 0px 7px 36px 0px rgba(255, 207, 1, 0.2);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 30px;
+  translate: 0 305px;
+}
 
 @media (min-width: 760px) {
   header {
@@ -120,6 +204,8 @@ main .hero .hero-button button {
     padding: 8px 16px;
     display: inline-flex;
     gap: 12px;
+    transform: scale(1);
+    transition-duration: 1s;
   }
   header .header-container .login-button button:hover {
     background-color: #5d84ad;
@@ -141,9 +227,22 @@ main .hero .hero-button button {
     width: 176px;
     height: 56px;
     font-size: 17px;
+    transform: scale(1);
+    transition-duration: 1s;
   }
   main .hero .hero-button button:hover {
     cursor: pointer;
     transform: scale(1.2);
+  }
+  main .projects .projects-br {
+    display: none;
+  }
+  main .projects h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  main .projects .projects-examples {
+    max-width: 720px;
+    gap: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

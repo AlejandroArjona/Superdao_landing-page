@@ -46,6 +46,7 @@ header{//empezamos a estilizar el header para mobile
 
 main{//Estilizamos el main para que este crezca a un width especifico
     display: flex;
+    flex-direction: column;
     justify-content: center;
     max-width: 328px;
     margin: 0 auto;
@@ -98,6 +99,100 @@ main{//Estilizamos el main para que este crezca a un width especifico
                 font-size: 15px;
                 font-weight: 700;
                 line-height: 30px;
+            }
+        }
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        
+        h1, p{//Damos estilos en comun al titulo y al parrafo dentro de projects
+            color: $main-text-color;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: $principal-font;
+        }
+
+        h1{
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        .projects-examples{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 24px;
+            max-width: 328px;
+            justify-content: center;
+            gap: 8px;
+            
+            .project{
+                display: inline-flex;
+                height: 40px;
+                padding: 12px 14px;
+                border-radius: 45px;
+                background: #182632;
+                border: none;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 16px;
+            }
+            
+            .project1, .project6{
+                color: #FFB4D3;
+            }
+            .project2{
+                color: #FFC24C;
+            }
+            .project3{
+                color: #D387F7;
+            }
+            .project4{
+                color: #77E6FF;
+            }
+            .project5{
+                color: #23C9DE;
+            }
+            .more{
+                color: #707F8D;
+            }
+        }
+
+        .projects-album{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin-top: 24px;
+
+            img{
+                border-radius: 24px;
+            }
+            button{
+                position: absolute;
+                //Posicionamiento
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                //shapes & sizes
+                border-radius: 12px;
+                //colors
+                background-color: #FFCF01;
+                box-shadow: 0px 7px 36px 0px rgba(255, 207, 1, 0.20);
+                //fonts
+                font-family: $principal-font;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 30px;
+                translate: 0 305px;
             }
         }
     }
@@ -157,6 +252,8 @@ main{//Estilizamos el main para que este crezca a un width especifico
                     padding: 8px 16px;
                     display: inline-flex;
                     gap: 12px;
+                    transform: scale(1);
+                    transition-duration: 1s;
                 }
 
                 button:hover{//cuando pasemos el cursor por el login-button, este hara las sig. acciones
@@ -184,11 +281,26 @@ main{//Estilizamos el main para que este crezca a un width especifico
                     width: 176px;
                     height: 56px;
                     font-size: 17px;
+                    transform: scale(1);//se agrega la posicion inicial del boton
+                    transition-duration: 1s;//se agrega la duracion de la animacion
                 }
                 button:hover{//se le agregan estilos al boton
                     cursor: pointer;
-                    transform: scale(1.2);
+                    transform: scale(1.2);//se agrega la posicion final del boton al hacer hover
                 }
+            }
+        }
+        .projects{
+            .projects-br{
+                display: none;
+            }
+            h1{
+                font-size: 36px;
+                line-height: 36px;
+            }
+            .projects-examples{
+                max-width: 720px;
+                gap: 20px;
             }
         }
     }
