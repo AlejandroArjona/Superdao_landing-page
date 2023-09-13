@@ -161,6 +161,40 @@ main .projects .projects-album button {
   line-height: 30px;
   translate: 0 305px;
 }
+main .designed-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .designed-for h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+}
+main .designed-for div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .designed-for div .design-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #37424D;
+  margin: 0;
+  transform: scale(1);
+  transition-duration: 250ms;
+}
+main .designed-for div .design-paragraph:active {
+  color: #23C9DE;
+  transform: scale(1.2);
+}
 
 @media (min-width: 760px) {
   header {
@@ -244,5 +278,13 @@ main .projects .projects-album button {
   main .projects .projects-examples {
     max-width: 720px;
     gap: 20px;
+  }
+  main .designed-for div .design-paragraph {
+    transition-duration: 500ms;
+  }
+  main .designed-for div .design-paragraph:hover {
+    color: #23C9DE;
+    transform: scale(1.2);
+    cursor: pointer;
   }
 }/*# sourceMappingURL=styles.css.map */

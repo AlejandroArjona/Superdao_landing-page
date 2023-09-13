@@ -102,6 +102,7 @@ main{//Estilizamos el main para que este crezca a un width especifico
             }
         }
     }
+
     .projects{
         display: flex;
         flex-direction: column;
@@ -193,6 +194,43 @@ main{//Estilizamos el main para que este crezca a un width especifico
                 font-weight: 700;
                 line-height: 30px;
                 translate: 0 305px;
+            }
+        }
+    }
+
+    .designed-for{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            font-family: $principal-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: $main-text-color;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            .design-paragraph{
+                font-family: $principal-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                color: #37424D;
+                margin: 0;
+                transform: scale(1);
+                transition-duration: 250ms;
+            }
+            .design-paragraph:active{
+                color: #23C9DE;
+                transform: scale(1.2);
             }
         }
     }
@@ -301,6 +339,18 @@ main{//Estilizamos el main para que este crezca a un width especifico
             .projects-examples{
                 max-width: 720px;
                 gap: 20px;
+            }
+        }
+        .designed-for{
+            div{
+                .design-paragraph{
+                    transition-duration: 500ms;
+                }
+                .design-paragraph:hover{
+                    color: #23C9DE;
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
             }
         }
     }
