@@ -298,6 +298,63 @@ main{//Estilizamos el main para que este crezca a un width especifico
             }
         }
     }
+
+    .works-with{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+
+        h2{
+            font-family: $principal-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: $main-text-color;
+            margin: 0;
+        }
+
+        .icons-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            row-gap: 24px;
+            margin-top: 24px;
+
+
+            .icon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                div{
+                    display: flex;
+                    width: 84px;
+                    height: 84px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20px;
+                    border: 0.957px solid #2A3744;
+                    background: #121E28;
+                }
+
+                p{
+                    font-family: $principal-font;
+                    text-align: center;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 17.976px;
+                    color: $main-text-color;
+                    margin: 0;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
 }
 
 
