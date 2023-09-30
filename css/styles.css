@@ -299,6 +299,72 @@ main .works-with .icons-container .icon p {
   margin: 0;
   margin-top: 12px;
 }
+main .masters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+main .masters h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+main .masters .masters-gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0 20px;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 33px;
+}
+main .masters .masters-gallery .masters-photo {
+  width: 73px;
+  height: 73px;
+  border-radius: 15px;
+}
+main .masters .masters-gallery .photo1 {
+  background-image: url(../assets/img/person_03.png);
+  background-size: cover;
+}
+main .masters .masters-gallery .photo2 {
+  background-image: url(../assets/img/person_04.png);
+  background-size: cover;
+}
+main .masters .masters-gallery .photo3 {
+  background-image: url(../assets/img/person_05.png);
+  background-size: cover;
+}
+main .masters .masters-gallery .photo4 {
+  background-image: url(../assets/img/person_01.png);
+  background-size: cover;
+}
+main .masters .masters-gallery .photo5 {
+  background-image: url(../assets/img/person_02.png);
+  background-size: cover;
+}
+main .masters .masters-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 35px;
+}
+main .masters .masters-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  margin: 0 5px;
+}
 
 @media (min-width: 760px) {
   header {

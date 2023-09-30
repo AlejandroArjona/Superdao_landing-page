@@ -355,6 +355,78 @@ main{//Estilizamos el main para que este crezca a un width especifico
             }
         }
     }
+
+    .masters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+
+        h2{
+            font-family: $principal-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: $main-text-color;
+            margin: 0;
+        }
+
+        .masters-gallery{
+            display: flex;
+            flex-wrap: wrap-reverse;
+            padding: 0 20px;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 33px;
+
+            .masters-photo{
+                width: 73px;
+                height: 73px;
+                border-radius: 15px;
+            }
+            .photo1{
+                background-image: url(../assets/img/person_03.png);
+                background-size: cover;
+            }
+            .photo2{
+                background-image: url(../assets/img/person_04.png);
+                background-size: cover;
+            }
+            .photo3{
+                background-image: url(../assets/img/person_05.png);
+                background-size: cover;
+            }
+            .photo4{
+                background-image: url(../assets/img/person_01.png);
+                background-size: cover;
+            }
+            .photo5{
+                background-image: url(../assets/img/person_02.png);
+                background-size: cover;
+            }
+        }
+
+        .masters-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 35px;
+
+            p{
+                font-family: $principal-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $main-text-color;
+                margin: 0 5px;
+            }
+        }
+    }
 }
 
 
