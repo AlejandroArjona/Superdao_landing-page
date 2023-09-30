@@ -427,6 +427,72 @@ main{//Estilizamos el main para que este crezca a un width especifico
             }
         }
     }
+
+    .digest{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 328px;
+        height: 280px;
+        background-color: #14212D;
+        border: 1px solid #2A3744;
+        border-radius: 22px;
+        margin-top: 80px;
+
+        h2{
+            text-align: center;
+            font-family: $principal-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            color: $main-text-color;
+            margin: 0;
+            margin-top: 28px;
+        }
+
+        p{
+            text-align: center;
+            font-family: $principal-font;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            color: #9AAFC3;
+            padding: 0 24px;
+            margin: 0;
+            margin-top: 8px;
+            margin-bottom: 24px;
+        }
+
+        input{
+            width: 80%;
+            background: #121E28;
+            padding: 13px 18px;
+            border-radius: 10px;
+            border: 1px solid #2A3744;
+            font-family: $principal-font;
+            color: #3D4C5B;
+            margin-bottom: 16px;
+        }
+
+        a{
+            width: 90%;
+            button{
+                width: 100%;
+                border-radius: 10px;
+                background-color:  #E2C1F9;
+                padding: 13px 18px;
+                color: #10151A;
+                text-align: center;
+                font-family: $principal-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+            }
+        }
+    }
 }
 
 
