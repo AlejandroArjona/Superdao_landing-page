@@ -426,6 +426,94 @@ main .digest a button {
   font-weight: 700;
   line-height: 24px;
 }
+main .press {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+main .press h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 24px;
+}
+main .press .press-card {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  height: 262px;
+  border-radius: 20px;
+  background-color: #77E6FF;
+  margin-bottom: 16px;
+}
+main .press .press-card img {
+  width: 192px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+main .press .press-card p:nth-child(3) {
+  color: #10151A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0 20px;
+  margin-top: 8px;
+}
+main .press .press-card p:nth-child(2) {
+  color: #10151A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 20px;
+  margin-top: 12px;
+}
+main .press .press-card a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+main .press .press-card a p {
+  margin-right: 8px;
+  color: #10151A;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main .press .press-card2 {
+  background-color: #E2C1F9;
+}
+main .press .press-card3 {
+  background-color: #DBE268;
+}
+main .press a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .press a p {
+  margin-right: 8px;
+  color: #8395A7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.6);
+}
 
 @media (min-width: 760px) {
   header {
