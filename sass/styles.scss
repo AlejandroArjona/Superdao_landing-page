@@ -591,6 +591,96 @@ main{//Estilizamos el main para que este crezca a un width especifico
             }
         }
     }
+
+    .podcasts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        h2{
+            font-family: $principal-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: $main-text-color;
+            margin: 0;
+            margin-bottom: 24px;
+        }
+        .podcasts-card{
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            border: 2px solid #2A3744;
+            background: #121E28;
+            backdrop-filter: blur(2px);
+            width: 328px;
+            height: 236px;
+
+            img{
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+            .podcast-title{
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 24px;
+                color: $main-text-color;
+                margin: 16px 20px 12px;
+                opacity: 1;
+            }
+            p{
+                font-family: $principal-font;
+                color: #E2E2E2;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                opacity: 0.8;
+                margin: 0 20px;
+            }
+            a{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 16px;
+
+                p{
+                    font-family: $principal-font;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    opacity: 1;
+                    margin-right: 4px;
+                }
+            }  
+        }
+        .podcasts-card-bigger{
+            height: 260px;
+            margin: 16px 0;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+
+            p{
+                margin-right: 8px;
+                color: #8395A7;
+                font-family: $principal-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.60);
+            }
+        }
+    }
 }
 
 
