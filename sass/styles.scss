@@ -681,6 +681,84 @@ main{//Estilizamos el main para que este crezca a un width especifico
             }
         }
     }
+
+    .ideas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 80px;
+        h2{
+            font-family: $principal-font;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: $main-text-color;
+            margin: 0;
+        }
+        p{
+            color: #5A6C7E;
+            text-align: center;
+            font-family: $principal-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            margin: 0;
+            margin-top: 12px;
+        }
+        .ideas-card{
+            width: 200px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 8px;
+            margin-top: 32px;
+
+            img{
+                width: 44px;
+                height: 44px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 4px;
+                margin-left: 12px;
+
+                .ideas-card-title{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+                p{
+                    color: #4D3705;
+                    font-family: $principal-font;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin: 0;
+                }
+            }
+        }
+        .telegram{
+            background-color: #FFC803;
+        }
+        .email{
+            background-color: #E2C1F9;
+            margin-top: 16px;
+            margin-bottom: 80px;
+            div{
+                p{
+                    color: #40354B;
+                }
+            }
+        }
+    }
 }
 
 
