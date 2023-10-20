@@ -177,7 +177,10 @@ main{//Estilizamos el main para que este crezca a un width especifico
                 color: #707F8D;
             }
         }
-
+        .projects-album__desktop{
+            display: none;
+        }
+        
         .projects-album{
             display: flex;
             flex-direction: column;

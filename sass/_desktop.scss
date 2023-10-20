@@ -118,5 +118,57 @@
                 }
             }
         }
+
+        .projects{
+            margin-top: 204px;
+
+            .projects-examples{
+                max-width: 890px;
+                gap: 24px;
+                margin-top: 44px;
+
+                .project{
+                    height: 56px;
+                    padding: 8px 26px;
+                    font-size: 20px;
+                    line-height: 40px;
+                    align-items: center;
+                }
+            }
+
+            .projects-album{
+                display: none;
+            }
+            .projects-album__desktop{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                margin-top: 52px;
+    
+                img{
+                    border-radius: 30px;
+                }
+                button{
+                    position: absolute;
+                    //Posicionamiento
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    //shapes & sizes
+                    border-radius: 100px;
+                    //colors
+                    background-color: #FFCF01;
+                    box-shadow: 0px 7px 36px 0px rgba(255, 207, 1, 0.20);
+                    //fonts
+                    font-family: $principal-font;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 32px;
+                    translate: 0 475px;
+                    padding: 6px 24px;
+                }
+            }
+        }
     }
 }

@@ -148,6 +148,9 @@ main .projects .projects-examples .project5 {
 main .projects .projects-examples .more {
   color: #707F8D;
 }
+main .projects .projects-album__desktop {
+  display: none;
+}
 main .projects .projects-album {
   display: flex;
   flex-direction: column;
@@ -811,5 +814,48 @@ footer .footer-logos {
   }
   main .projects h2 br, main .designed-for h2 br, main .app h2 br, main .works-with h2 br, main .masters h2 br, main .press h2 br, main .podcasts h2 br, main .ideas h2 br {
     display: none;
+  }
+  main .projects {
+    margin-top: 204px;
+  }
+  main .projects .projects-examples {
+    max-width: 890px;
+    gap: 24px;
+    margin-top: 44px;
+  }
+  main .projects .projects-examples .project {
+    height: 56px;
+    padding: 8px 26px;
+    font-size: 20px;
+    line-height: 40px;
+    align-items: center;
+  }
+  main .projects .projects-album {
+    display: none;
+  }
+  main .projects .projects-album__desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 52px;
+  }
+  main .projects .projects-album__desktop img {
+    border-radius: 30px;
+  }
+  main .projects .projects-album__desktop button {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: #FFCF01;
+    box-shadow: 0px 7px 36px 0px rgba(255, 207, 1, 0.2);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    translate: 0 475px;
+    padding: 6px 24px;
   }
 }/*# sourceMappingURL=styles.css.map */
