@@ -1,4 +1,5 @@
 @media (min-width: 1024px) {//media para pantallas igual o mayor a 760px
+    
     header{
         height: 104px;//Se ajusta el nuevo height del header para tablet y desktop
 
@@ -42,20 +43,24 @@
 
             .login-button{//Damos estilos al login-button
                 button{
-                    width: 67px;
-                    height: 31px;
-                    border-radius: 8px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 92px;
+                    height: 44px;
+                    border-radius: 12px;
                     background-color: #243241;
                     border: none;
                     color: white;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 12px;
+                    font-family: $principal-font;
+                    font-size: 18px;
                     font-weight: 500;
+                    line-height: normal;
                     padding: 8px 16px;
                     display: inline-flex;
                     gap: 12px;
                     transform: scale(1);
-                    transition-duration: 1s;
+                    transition-duration: 250ms;
                 }
 
                 button:hover{//cuando pasemos el cursor por el login-button, este hara las sig. acciones
@@ -63,6 +68,44 @@
                     cursor: pointer;
                     transform: scale(1.2);
                 }
+            }
+        }
+    }
+
+    main{
+        max-width: 1140px;
+        margin-top: 132px;
+        .hero{
+            h1{
+                font-size: 72px;
+                line-height: 82px;
+            }
+            p{
+                font-size: 26px;
+                line-height: 46px;
+                margin-top: 32px;
+
+                .desktop-br{
+                    display: initial;
+                }
+            }
+            .hero-button{
+                margin-top: 56px;
+
+                button{
+                    width: 214px;
+                    height: 68px;
+                    border-radius: 16px;
+                    font-size: 20px;
+                    line-height: 36px;
+                    transform: scale(1);
+                    transition-duration: 250ms;
+                }
+                button:hover{//cuando pasemos el cursor por el login-button, este hara las sig. acciones
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+                
             }
         }
     }

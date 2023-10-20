@@ -69,8 +69,13 @@ main .hero p {
   line-height: 28px;
   margin-top: 16px;
 }
-main .hero .hero-button button {
+main .hero p .desktop-br {
+  display: none;
+}
+main .hero .hero-button {
   margin-top: 40px;
+}
+main .hero .hero-button button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -744,23 +749,59 @@ footer .footer-logos {
     gap: 44px;
   }
   header .header-container .login-button button {
-    width: 67px;
-    height: 31px;
-    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 44px;
+    border-radius: 12px;
     background-color: #243241;
     border: none;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 500;
+    line-height: normal;
     padding: 8px 16px;
     display: inline-flex;
     gap: 12px;
     transform: scale(1);
-    transition-duration: 1s;
+    transition-duration: 250ms;
   }
   header .header-container .login-button button:hover {
     background-color: #5d84ad;
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  main {
+    max-width: 1140px;
+    margin-top: 132px;
+  }
+  main .hero h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+  main .hero p {
+    font-size: 26px;
+    line-height: 46px;
+    margin-top: 32px;
+  }
+  main .hero p .desktop-br {
+    display: initial;
+  }
+  main .hero .hero-button {
+    margin-top: 56px;
+  }
+  main .hero .hero-button button {
+    width: 214px;
+    height: 68px;
+    border-radius: 16px;
+    font-size: 20px;
+    line-height: 36px;
+    transform: scale(1);
+    transition-duration: 250ms;
+  }
+  main .hero .hero-button button:hover {
     cursor: pointer;
     transform: scale(1.2);
   }
