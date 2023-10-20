@@ -675,6 +675,33 @@ main .ideas .email div p {
   color: #40354B;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  padding: 32px 70px;
+  background-color: #121E28;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+footer .footer-links p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+footer .footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 @media (min-width: 760px) {
   header {
     height: 86px;

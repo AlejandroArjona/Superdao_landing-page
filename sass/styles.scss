@@ -761,6 +761,36 @@ main{//Estilizamos el main para que este crezca a un width especifico
     }
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    padding: 32px 70px;
+    background-color: #121E28;
+
+    .footer-links{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        p{
+            font-family: $principal-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+        }
+    }
+
+    .footer-logos{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
 
 
 
