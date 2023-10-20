@@ -1,0 +1,69 @@
+@media (min-width: 1024px) {//media para pantallas igual o mayor a 760px
+    header{
+        height: 104px;//Se ajusta el nuevo height del header para tablet y desktop
+
+        .header-container{//Se ajusta el nuevo size del contenido del header
+            width: 1140px;
+            max-width: none;
+            padding: 0;
+
+            .header-logo-desktop{
+                display: contents;
+            }
+
+            .header-logo-mobile{
+                display: none;
+            }
+
+            .header-nav, .button{//Se despliega el nav-bar y login button
+                display: contents;
+            }
+
+            .header-hamburguer{//Se oculta el menu hamburguer
+                display: none;
+            }
+
+            .header-nav{//Se dan estilos al nav-bar para que se imprima correctamente
+                ul{
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    text-decoration: none;
+                    list-style: none;
+                    color: $main-text-color;
+                    font-family: $principal-font;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    gap: 44px;
+                }
+            }
+
+            .login-button{//Damos estilos al login-button
+                button{
+                    width: 67px;
+                    height: 31px;
+                    border-radius: 8px;
+                    background-color: #243241;
+                    border: none;
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 12px;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    display: inline-flex;
+                    gap: 12px;
+                    transform: scale(1);
+                    transition-duration: 1s;
+                }
+
+                button:hover{//cuando pasemos el cursor por el login-button, este hara las sig. acciones
+                    background-color: #5d84ad;
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

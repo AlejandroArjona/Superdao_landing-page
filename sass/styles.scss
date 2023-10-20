@@ -37,6 +37,13 @@ header{//empezamos a estilizar el header para mobile
         width: 100%;
         max-width: 400px;
         padding: 16px;
+
+        .header-logo-mobile{
+            display: contents;
+        }
+        .header-logo-desktop{
+            display: none;
+        }
         
         .header-nav, .button{//display:none para ocultar el nav-bar y login button en mobile-first
             display: none;
@@ -109,7 +116,7 @@ main{//Estilizamos el main para que este crezca a un width especifico
         align-items: center;
         margin-top: 100px;
         
-        h1, p{//Damos estilos en comun al titulo y al parrafo dentro de projects
+        h2, p{//Damos estilos en comun al titulo y al parrafo dentro de projects
             color: $main-text-color;
             text-align: center;
             margin: 0;
@@ -117,7 +124,7 @@ main{//Estilizamos el main para que este crezca a un width especifico
             font-family: $principal-font;
         }
 
-        h1{
+        h2{
             font-size: 28px;
             font-style: normal;
             font-weight: 700;
@@ -791,125 +798,4 @@ footer{
     }
 }
 
-
-
-
-
-
-
-@media (min-width: 760px) {//media para pantallas igual o mayor a 760px
-    header{
-        height: 86px;//Se ajusta el nuevo height del header para tablet y desktop
-
-        .header-container{//Se ajusta el nuevo size del contenido del header
-            width: 736px;
-            max-width: none;
-            padding: 0;
-
-            .header-nav, .button{//Se despliega el nav-bar y login button
-                display: block;
-            }
-
-            .header-hamburguer{//Se oculta el menu hamburguer
-                display: none;
-            }
-
-            .header-nav{//Se dan estilos al nav-bar para que se imprima correctamente
-                ul{
-                    display: flex;
-                    padding: 0;
-                    margin: 0;
-                    text-decoration: none;
-                    list-style: none;
-                    color: $main-text-color;
-                    font-family: $principal-font;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    gap: 24px;
-                }
-            }
-
-            .login-button{//Damos estilos al login-button
-                button{
-                    width: 67px;
-                    height: 31px;
-                    border-radius: 8px;
-                    background-color: #243241;
-                    border: none;
-                    color: white;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 12px;
-                    font-weight: 500;
-                    padding: 8px 16px;
-                    display: inline-flex;
-                    gap: 12px;
-                    transform: scale(1);
-                    transition-duration: 1s;
-                }
-
-                button:hover{//cuando pasemos el cursor por el login-button, este hara las sig. acciones
-                    background-color: #5d84ad;
-                    cursor: pointer;
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-    main{//Se ajusta el nuevo width del main
-        max-width: 736px;
-        .hero{
-            h1{//cambiamos los font sizes del titulo y del parrafo
-                font-size: 56px;
-                line-height: 60px;
-            }
-
-            p{
-                font-size: 20px;
-                line-height: 34px;
-            }
-            .hero-button{
-                button{//Modificamos el size del hero-button
-                    width: 176px;
-                    height: 56px;
-                    font-size: 17px;
-                    transform: scale(1);//se agrega la posicion inicial del boton
-                    transition-duration: 1s;//se agrega la duracion de la animacion
-                }
-                button:hover{//se le agregan estilos al boton
-                    cursor: pointer;
-                    transform: scale(1.2);//se agrega la posicion final del boton al hacer hover
-                }
-            }
-        }
-        .projects{
-            .projects-br{
-                display: none;
-            }
-            h1{
-                font-size: 36px;
-                line-height: 36px;
-            }
-            .projects-examples{
-                max-width: 720px;
-                gap: 20px;
-            }
-        }
-        .designed-for{
-            div{
-                .design-paragraph{
-                    text-align: center;
-                    transition-duration: 500ms;
-                    font-size: 32px;
-                    line-height: 50px;
-                }
-                .design-paragraph:hover{
-                    color: #23C9DE;
-                    transform: scale(1.2);
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
+@import '_desktop.scss';

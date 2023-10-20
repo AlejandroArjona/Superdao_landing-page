@@ -26,6 +26,12 @@ header .header-container {
   max-width: 400px;
   padding: 16px;
 }
+header .header-container .header-logo-mobile {
+  display: contents;
+}
+header .header-container .header-logo-desktop {
+  display: none;
+}
 header .header-container .header-nav, header .header-container .button {
   display: none;
 }
@@ -84,14 +90,14 @@ main .projects {
   align-items: center;
   margin-top: 100px;
 }
-main .projects h1, main .projects p {
+main .projects h2, main .projects p {
   color: #fff;
   text-align: center;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
-main .projects h1 {
+main .projects h2 {
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -702,17 +708,23 @@ footer .footer-logos {
   gap: 20px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 1024px) {
   header {
-    height: 86px;
+    height: 104px;
   }
   header .header-container {
-    width: 736px;
+    width: 1140px;
     max-width: none;
     padding: 0;
   }
+  header .header-container .header-logo-desktop {
+    display: contents;
+  }
+  header .header-container .header-logo-mobile {
+    display: none;
+  }
   header .header-container .header-nav, header .header-container .button {
-    display: block;
+    display: contents;
   }
   header .header-container .header-hamburguer {
     display: none;
@@ -725,11 +737,11 @@ footer .footer-logos {
     list-style: none;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    gap: 24px;
+    gap: 44px;
   }
   header .header-container .login-button button {
     width: 67px;
@@ -751,49 +763,5 @@ footer .footer-logos {
     background-color: #5d84ad;
     cursor: pointer;
     transform: scale(1.2);
-  }
-  main {
-    max-width: 736px;
-  }
-  main .hero h1 {
-    font-size: 56px;
-    line-height: 60px;
-  }
-  main .hero p {
-    font-size: 20px;
-    line-height: 34px;
-  }
-  main .hero .hero-button button {
-    width: 176px;
-    height: 56px;
-    font-size: 17px;
-    transform: scale(1);
-    transition-duration: 1s;
-  }
-  main .hero .hero-button button:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-  }
-  main .projects .projects-br {
-    display: none;
-  }
-  main .projects h1 {
-    font-size: 36px;
-    line-height: 36px;
-  }
-  main .projects .projects-examples {
-    max-width: 720px;
-    gap: 20px;
-  }
-  main .designed-for div .design-paragraph {
-    text-align: center;
-    transition-duration: 500ms;
-    font-size: 32px;
-    line-height: 50px;
-  }
-  main .designed-for div .design-paragraph:hover {
-    color: #23C9DE;
-    transform: scale(1.2);
-    cursor: pointer;
   }
 }/*# sourceMappingURL=styles.css.map */
