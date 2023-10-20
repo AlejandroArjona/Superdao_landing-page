@@ -170,5 +170,23 @@
                 }
             }
         }
+
+        .designed-for{
+            margin-top: 178px;
+
+            div{
+                gap: 20px;
+
+                .design-paragraph{
+                    font-size: 54px;
+                    line-height: 64px;
+                }
+                .design-paragraph:hover{
+                    color: #23C9DE;
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }

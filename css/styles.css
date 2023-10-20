@@ -858,4 +858,19 @@ footer .footer-logos {
     translate: 0 475px;
     padding: 6px 24px;
   }
+  main .designed-for {
+    margin-top: 178px;
+  }
+  main .designed-for div {
+    gap: 20px;
+  }
+  main .designed-for div .design-paragraph {
+    font-size: 54px;
+    line-height: 64px;
+  }
+  main .designed-for div .design-paragraph:hover {
+    color: #23C9DE;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=styles.css.map */
