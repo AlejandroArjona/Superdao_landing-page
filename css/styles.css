@@ -805,4 +805,11 @@ footer .footer-logos {
     cursor: pointer;
     transform: scale(1.2);
   }
+  main .projects h2, main .designed-for h2, main .app h2, main .works-with h2, main .masters h2, main .press h2, main .podcasts h2, main .ideas h2 {
+    font-size: 54px;
+    line-height: 80px;
+  }
+  main .projects h2 br, main .designed-for h2 br, main .app h2 br, main .works-with h2 br, main .masters h2 br, main .press h2 br, main .podcasts h2 br, main .ideas h2 br {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

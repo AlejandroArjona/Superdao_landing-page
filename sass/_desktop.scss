@@ -108,5 +108,15 @@
                 
             }
         }
+
+        .projects, .designed-for, .app, .works-with, .masters, .press, .podcasts, .ideas{
+            h2{
+                font-size: 54px;
+                line-height: 80px;
+                br{
+                    display: none;
+                }
+            }
+        }
     }
 }
