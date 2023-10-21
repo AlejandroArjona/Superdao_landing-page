@@ -462,7 +462,10 @@ main .press {
   align-items: center;
   margin-top: 80px;
 }
-main .press h2 {
+main .press .press-cards__desktop {
+  display: none;
+}
+main .press .press-title h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
@@ -473,7 +476,11 @@ main .press h2 {
   margin: 0;
   margin-bottom: 24px;
 }
-main .press .press-card {
+main .press .press-cards__mobile {
+  display: flex;
+  flex-direction: column;
+}
+main .press .press-cards__mobile .press-card {
   display: flex;
   flex-direction: column;
   width: 328px;
@@ -482,13 +489,13 @@ main .press .press-card {
   background-color: #77E6FF;
   margin-bottom: 16px;
 }
-main .press .press-card img {
+main .press .press-cards__mobile .press-card img {
   width: 192px;
   height: 50px;
   margin-left: 20px;
   margin-top: 20px;
 }
-main .press .press-card p:nth-child(3) {
+main .press .press-cards__mobile .press-card p:nth-child(3) {
   color: #10151A;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -498,7 +505,7 @@ main .press .press-card p:nth-child(3) {
   margin: 0 20px;
   margin-top: 8px;
 }
-main .press .press-card p:nth-child(2) {
+main .press .press-cards__mobile .press-card p:nth-child(2) {
   color: #10151A;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -508,13 +515,13 @@ main .press .press-card p:nth-child(2) {
   margin: 0 20px;
   margin-top: 12px;
 }
-main .press .press-card a {
+main .press .press-cards__mobile .press-card a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 20px;
 }
-main .press .press-card a p {
+main .press .press-cards__mobile .press-card a p {
   margin-right: 8px;
   color: #10151A;
   font-family: "Montserrat", sans-serif;
@@ -523,18 +530,18 @@ main .press .press-card a p {
   font-weight: 700;
   line-height: normal;
 }
-main .press .press-card2 {
+main .press .press-cards__mobile .press-card2 {
   background-color: #E2C1F9;
 }
-main .press .press-card3 {
+main .press .press-cards__mobile .press-card3 {
   background-color: #DBE268;
 }
-main .press a {
+main .press .press-arrow__mobile {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .press a p {
+main .press .press-arrow__mobile p {
   margin-right: 8px;
   color: #8395A7;
   font-family: "Montserrat", sans-serif;
@@ -543,6 +550,9 @@ main .press a p {
   font-weight: 700;
   line-height: normal;
   text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.6);
+}
+main .press .press-arrow__desktop {
+  display: none;
 }
 main .podcasts {
   display: flex;
@@ -824,11 +834,11 @@ footer .footer-logos {
     cursor: pointer;
     transform: scale(1.2);
   }
-  main .projects h2, main .designed-for h2, main .app h2, main .works-with h2, main .masters h2, main .press h2, main .podcasts h2, main .ideas h2 {
+  main .projects h2, main .designed-for h2, main .app h2, main .works-with h2, main .masters h2, main .ideas h2 {
     font-size: 54px;
     line-height: 80px;
   }
-  main .projects h2 br, main .designed-for h2 br, main .app h2 br, main .works-with h2 br, main .masters h2 br, main .press h2 br, main .podcasts h2 br, main .ideas h2 br {
+  main .projects h2 br, main .designed-for h2 br, main .app h2 br, main .works-with h2 br, main .masters h2 br, main .ideas h2 br {
     display: none;
   }
   main .projects {
@@ -1068,5 +1078,106 @@ footer .footer-logos {
   main .digest div a:hover {
     transform: scale(1.2);
     cursor: pointer;
+  }
+  main .press {
+    margin-top: 200px;
+  }
+  main .press .press-arrow__mobile {
+    display: none;
+  }
+  main .press .press-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .press .press-title h2 {
+    justify-self: flex-start;
+    font-size: 54px;
+    line-height: 80px;
+  }
+  main .press .press-title .press-arrow__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .press .press-title .press-arrow__desktop p {
+    margin-right: 8px;
+    color: #8395A7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.6);
+  }
+  main .press .press-cards__mobile {
+    display: none;
+  }
+  main .press .press-cards__desktop {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+  }
+  main .press .press-cards__desktop .press-card {
+    display: flex;
+    flex-direction: column;
+    width: 361px;
+    height: 382px;
+    border-radius: 20px;
+    background-color: #77E6FF;
+    margin-bottom: 16px;
+  }
+  main .press .press-cards__desktop .press-card img {
+    width: 192px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  main .press .press-cards__desktop .press-card p:nth-child(3) {
+    color: #10151A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    margin: 0;
+    margin-top: 12px;
+    margin-left: 28px;
+  }
+  main .press .press-cards__desktop .press-card p:nth-child(2) {
+    color: #10151A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 21px;
+    margin-left: 28px;
+  }
+  main .press .press-cards__desktop .press-card a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 28px;
+    margin: 0;
+    margin-top: 36px;
+  }
+  main .press .press-cards__desktop .press-card a p {
+    margin-right: 8px;
+    color: #10151A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  main .press .press-cards__desktop .press-card2 {
+    background-color: #E2C1F9;
+  }
+  main .press .press-cards__desktop .press-card3 {
+    background-color: #DBE268;
   }
 }/*# sourceMappingURL=styles.css.map */
