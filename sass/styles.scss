@@ -355,6 +355,10 @@ main{//Estilizamos el main para que este crezca a un width especifico
                     border-radius: 20px;
                     border: 0.957px solid #2A3744;
                     background: #121E28;
+
+                    .works-with-icon__desktop{
+                        display: none;
+                    }
                 }
 
                 p{

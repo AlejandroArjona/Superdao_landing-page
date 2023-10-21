@@ -235,5 +235,42 @@
                 }
             }
         }
+
+        .works-with{
+            margin-top: 200px;
+
+            .icons-container{
+                column-gap: 36px;
+                margin-top: 44px;
+
+                .icon{
+                    transform: translateY(0);
+                    transition-duration: 250ms;
+                    div{
+                        width: 158px;
+                        height: 158px;
+
+                        .works-with-icon__desktop{
+                            display: flex;
+                        }
+
+                        .works-with-icon__mobile{
+                            display: none;
+                        }
+                    }
+                    p{
+                        font-size: 22px;
+                        line-height: 40px;
+                    }
+                }
+                .icon:hover{
+                    transform: translateY(-20px);
+                    cursor: pointer;
+                    p{
+                        color: #23C9DE;
+                    }
+                }
+            }
+        }
     }
 }

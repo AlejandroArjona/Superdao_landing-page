@@ -305,6 +305,9 @@ main .works-with .icons-container .icon div {
   border: 0.957px solid #2A3744;
   background: #121E28;
 }
+main .works-with .icons-container .icon div .works-with-icon__desktop {
+  display: none;
+}
 main .works-with .icons-container .icon p {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -917,5 +920,38 @@ footer .footer-logos {
   main .app .watch-button button:hover {
     transform: scale(1.2);
     cursor: pointer;
+  }
+  main .works-with {
+    margin-top: 200px;
+  }
+  main .works-with .icons-container {
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+    margin-top: 44px;
+  }
+  main .works-with .icons-container .icon {
+    transform: translateY(0);
+    transition-duration: 250ms;
+  }
+  main .works-with .icons-container .icon div {
+    width: 158px;
+    height: 158px;
+  }
+  main .works-with .icons-container .icon div .works-with-icon__desktop {
+    display: flex;
+  }
+  main .works-with .icons-container .icon div .works-with-icon__mobile {
+    display: none;
+  }
+  main .works-with .icons-container .icon p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  main .works-with .icons-container .icon:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+  }
+  main .works-with .icons-container .icon:hover p {
+    color: #23C9DE;
   }
 }/*# sourceMappingURL=styles.css.map */
