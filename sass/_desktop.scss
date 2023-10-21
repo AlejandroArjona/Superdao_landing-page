@@ -272,5 +272,61 @@
                 }
             }
         }
+        .masters{
+            margin-top: 200px;
+
+            .masters-content{
+                display: none;
+            }
+            
+            .masters-gallery{
+                flex-wrap: wrap;
+                column-gap: 25px;
+                margin-top: 44px;
+
+                .masters-photo{
+                    width: 160px;
+                    height: 160px;
+                }
+                .photo1{
+                    background-image: url(../assets/img/person_01-desktop.png);
+                }
+                .photo2{
+                    background-image: url(../assets/img/person_02-desktop.png);
+                }
+                .photo3{
+                    background-image: url(../assets/img/person_03-desktop.png);
+                }
+                .photo4{
+                    background-image: url(../assets/img/person_04-desktop.png);
+                }
+                .photo5{
+                    background-image: url(../assets/img/person_05-desktop.png);
+                }
+                .photo6{
+                    background-image: url(../assets/img/person_06-desktop.png);
+                }
+            }
+
+            .masters-content__desktop{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 25px;
+                margin-top: 48px;
+                padding: 0 20px;
+
+            p{
+                font-family: $principal-font;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $main-text-color;
+                margin: 0 5px;
+            }
+            }
+        }
     }
 }

@@ -382,6 +382,10 @@ main{//Estilizamos el main para que este crezca a un width especifico
         align-items: center;
         margin-top: 80px;
 
+        .masters-content__desktop{
+            display: none;
+        }
+
         h2{
             font-family: $principal-font;
             font-size: 28px;

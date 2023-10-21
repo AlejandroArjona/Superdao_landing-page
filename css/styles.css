@@ -325,6 +325,9 @@ main .masters {
   align-items: center;
   margin-top: 80px;
 }
+main .masters .masters-content__desktop {
+  display: none;
+}
 main .masters h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
@@ -953,5 +956,57 @@ footer .footer-logos {
   }
   main .works-with .icons-container .icon:hover p {
     color: #23C9DE;
+  }
+  main .masters {
+    margin-top: 200px;
+  }
+  main .masters .masters-content {
+    display: none;
+  }
+  main .masters .masters-gallery {
+    flex-wrap: wrap;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    margin-top: 44px;
+  }
+  main .masters .masters-gallery .masters-photo {
+    width: 160px;
+    height: 160px;
+  }
+  main .masters .masters-gallery .photo1 {
+    background-image: url(../assets/img/person_01-desktop.png);
+  }
+  main .masters .masters-gallery .photo2 {
+    background-image: url(../assets/img/person_02-desktop.png);
+  }
+  main .masters .masters-gallery .photo3 {
+    background-image: url(../assets/img/person_03-desktop.png);
+  }
+  main .masters .masters-gallery .photo4 {
+    background-image: url(../assets/img/person_04-desktop.png);
+  }
+  main .masters .masters-gallery .photo5 {
+    background-image: url(../assets/img/person_05-desktop.png);
+  }
+  main .masters .masters-gallery .photo6 {
+    background-image: url(../assets/img/person_06-desktop.png);
+  }
+  main .masters .masters-content__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 48px;
+    padding: 0 20px;
+  }
+  main .masters .masters-content__desktop p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    margin: 0 5px;
   }
 }/*# sourceMappingURL=styles.css.map */
