@@ -247,6 +247,9 @@ main .app div p {
 main .app div p:nth-child(1) {
   color: #FFC803;
 }
+main .app .app-img__desktop {
+  display: none;
+}
 main .app .watch-button button {
   padding: 4px 29px 4px 30px;
   display: inline-flex;
@@ -870,6 +873,48 @@ footer .footer-logos {
   }
   main .designed-for div .design-paragraph:hover {
     color: #23C9DE;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  main .app {
+    margin-top: 200px;
+  }
+  main .app div {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin-top: 42px;
+  }
+  main .app div p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  main .app div p:nth-child(1) {
+    color: #8395A7;
+  }
+  main .app div p:hover {
+    color: #FFC803;
+    cursor: pointer;
+  }
+  main .app .app-img__mobile {
+    display: none;
+  }
+  main .app .app-img__desktop {
+    display: flex;
+    margin-top: 46px;
+  }
+  main .app .watch-button {
+    margin-top: 44px;
+  }
+  main .app .watch-button button {
+    padding: 16px 56px 16px 48px;
+    width: 280px;
+    height: 68px;
+    font-size: 20px;
+    line-height: 36px;
+    transform: scale(1);
+    transition-duration: 250ms;
+  }
+  main .app .watch-button button:hover {
     transform: scale(1.2);
     cursor: pointer;
   }

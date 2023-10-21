@@ -180,7 +180,7 @@ main{//Estilizamos el main para que este crezca a un width especifico
         .projects-album__desktop{
             display: none;
         }
-        
+
         .projects-album{
             display: flex;
             flex-direction: column;
@@ -288,7 +288,9 @@ main{//Estilizamos el main para que este crezca a un width especifico
                 color: #FFC803;
             }
         }
-
+        .app-img__desktop{
+            display: none;
+        }
         .watch-button{
             button{
                 //Posicionamiento

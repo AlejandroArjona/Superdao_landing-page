@@ -188,5 +188,52 @@
                 }
             }
         }
+
+        .app{
+            margin-top: 200px;
+
+            div{
+                column-gap: 40px;
+                margin-top: 42px;
+
+                p{
+                    font-size: 22px;
+                    line-height: 40px;
+                }
+                p:nth-child(1){
+                    color: #8395A7;
+                }
+                p:hover{
+                    color: #FFC803;
+                    cursor: pointer;
+                }
+            }
+
+            .app-img__mobile{
+                display: none;
+            }
+
+            .app-img__desktop{
+                display: flex;
+                margin-top: 46px;
+            }
+
+            .watch-button{
+                margin-top: 44px;
+                button{
+                    padding: 16px 56px 16px 48px;
+                    width: 280px;
+                    height: 68px;
+                    font-size: 20px;
+                    line-height: 36px;
+                    transform: scale(1);
+                    transition-duration: 250ms;
+                }
+                button:hover{
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
