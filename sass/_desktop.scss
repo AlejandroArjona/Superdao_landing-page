@@ -500,5 +500,67 @@
             }
             }
         }
+
+        .podcasts{
+            .podcasts-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                h2{
+                    margin: 0;
+                    font-size: 54px;
+                    line-height: 80px;
+                }
+                .podcasts-arrow__desktop{
+                    display: flex;
+                    margin: 0;
+                    p{
+                        font-size: 22px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            .podcasts-cards-container {
+                flex-direction: row;
+                column-gap: 28px;
+                margin-top: 28px;
+                .podcasts-card-bigger{
+                    margin: 0;
+                    height: auto;
+                }
+                .podcasts-card{
+                    width: 361px;
+                    height: 334px;
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                        margin-top: 20px;
+                    }
+
+                    .podcast-title{
+                        font-size: 20px;
+                        line-height: 28px;
+                        margin-top: 21px;
+                        margin-bottom: 18px;
+                    }
+                    p{
+                        font-size: 17px;
+                        line-height: normal;
+                    }
+                    a{
+                        margin-top: 61px;
+                        justify-self: flex-end;
+                    }
+                }
+            }
+            .podcasts-arrow__mobile{
+                display: none;
+            }
+        }
     }
 }

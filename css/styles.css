@@ -571,7 +571,14 @@ main .podcasts h2 {
   margin: 0;
   margin-bottom: 24px;
 }
-main .podcasts .podcasts-card {
+main .podcasts .podcasts-title .podcasts-arrow__desktop {
+  display: none;
+}
+main .podcasts .podcasts-cards-container {
+  display: flex;
+  flex-direction: column;
+}
+main .podcasts .podcasts-cards-container .podcasts-card {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -582,13 +589,13 @@ main .podcasts .podcasts-card {
   width: 328px;
   height: 236px;
 }
-main .podcasts .podcasts-card img {
+main .podcasts .podcasts-cards-container .podcasts-card img {
   width: 40px;
   height: 40px;
   margin-left: 20px;
   margin-top: 20px;
 }
-main .podcasts .podcasts-card .podcast-title {
+main .podcasts .podcasts-cards-container .podcasts-card .podcast-title {
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -596,7 +603,7 @@ main .podcasts .podcasts-card .podcast-title {
   margin: 16px 20px 12px;
   opacity: 1;
 }
-main .podcasts .podcasts-card p {
+main .podcasts .podcasts-cards-container .podcasts-card p {
   font-family: "Montserrat", sans-serif;
   color: #E2E2E2;
   font-size: 14px;
@@ -606,13 +613,13 @@ main .podcasts .podcasts-card p {
   opacity: 0.8;
   margin: 0 20px;
 }
-main .podcasts .podcasts-card a {
+main .podcasts .podcasts-cards-container .podcasts-card a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 16px;
 }
-main .podcasts .podcasts-card a p {
+main .podcasts .podcasts-cards-container .podcasts-card a p {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -621,7 +628,7 @@ main .podcasts .podcasts-card a p {
   opacity: 1;
   margin-right: 4px;
 }
-main .podcasts .podcasts-card-bigger {
+main .podcasts .podcasts-cards-container .podcasts-card-bigger {
   height: 260px;
   margin: 16px 0;
 }
@@ -1179,5 +1186,61 @@ footer .footer-logos {
   }
   main .press .press-cards__desktop .press-card3 {
     background-color: #DBE268;
+  }
+  main .podcasts .podcasts-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  main .podcasts .podcasts-title h2 {
+    margin: 0;
+    font-size: 54px;
+    line-height: 80px;
+  }
+  main .podcasts .podcasts-title .podcasts-arrow__desktop {
+    display: flex;
+    margin: 0;
+  }
+  main .podcasts .podcasts-title .podcasts-arrow__desktop p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  main .podcasts .podcasts-cards-container {
+    flex-direction: row;
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+    margin-top: 28px;
+  }
+  main .podcasts .podcasts-cards-container .podcasts-card-bigger {
+    margin: 0;
+    height: auto;
+  }
+  main .podcasts .podcasts-cards-container .podcasts-card {
+    width: 361px;
+    height: 334px;
+  }
+  main .podcasts .podcasts-cards-container .podcasts-card img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  main .podcasts .podcasts-cards-container .podcasts-card .podcast-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 21px;
+    margin-bottom: 18px;
+  }
+  main .podcasts .podcasts-cards-container .podcasts-card p {
+    font-size: 17px;
+    line-height: normal;
+  }
+  main .podcasts .podcasts-cards-container .podcasts-card a {
+    margin-top: 61px;
+    justify-self: flex-end;
+  }
+  main .podcasts .podcasts-arrow__mobile {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
