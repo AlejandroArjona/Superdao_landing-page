@@ -675,7 +675,12 @@ main .ideas p {
   margin: 0;
   margin-top: 12px;
 }
-main .ideas .ideas-card {
+main .ideas .ideas-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .ideas .ideas-card-container .ideas-card {
   width: 200px;
   height: 60px;
   border-radius: 16px;
@@ -685,23 +690,23 @@ main .ideas .ideas-card {
   padding-left: 8px;
   margin-top: 32px;
 }
-main .ideas .ideas-card img {
+main .ideas .ideas-card-container .ideas-card img {
   width: 44px;
   height: 44px;
 }
-main .ideas .ideas-card div {
+main .ideas .ideas-card-container .ideas-card div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
   margin-left: 12px;
 }
-main .ideas .ideas-card div .ideas-card-title {
+main .ideas .ideas-card-container .ideas-card div .ideas-card-title {
   font-size: 16px;
   font-weight: 700;
   margin: 0;
 }
-main .ideas .ideas-card div p {
+main .ideas .ideas-card-container .ideas-card div p {
   color: #4D3705;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -710,15 +715,15 @@ main .ideas .ideas-card div p {
   line-height: normal;
   margin: 0;
 }
-main .ideas .telegram {
+main .ideas .ideas-card-container .telegram {
   background-color: #FFC803;
 }
-main .ideas .email {
+main .ideas .ideas-card-container .email {
   background-color: #E2C1F9;
   margin-top: 16px;
   margin-bottom: 80px;
 }
-main .ideas .email div p {
+main .ideas .ideas-card-container .email div p {
   color: #40354B;
 }
 
@@ -1242,5 +1247,35 @@ footer .footer-logos {
   }
   main .podcasts .podcasts-arrow__mobile {
     display: none;
+  }
+  main .ideas p {
+    font-size: 48px;
+    line-height: 74px;
+    margin-top: 16px;
+  }
+  main .ideas p br {
+    display: none;
+  }
+  main .ideas .ideas-card-container {
+    flex-direction: row;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    margin-top: 52px;
+    margin-bottom: 200px;
+  }
+  main .ideas .ideas-card-container .email, main .ideas .ideas-card-container .telegram {
+    margin: 0;
+  }
+  main .ideas .ideas-card-container .ideas-card {
+    width: 280px;
+    height: 84px;
+  }
+  main .ideas .ideas-card-container .ideas-card div .ideas-card-title {
+    font-size: 20px;
+    line-height: normal;
+  }
+  main .ideas .ideas-card-container .ideas-card div p {
+    font-size: 16px;
+    line-height: normal;
   }
 }/*# sourceMappingURL=styles.css.map */
