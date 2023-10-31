@@ -831,6 +831,10 @@ footer{
     padding: 32px 70px;
     background-color: #121E28;
 
+    .footer-logo__desktop{
+        display: none;
+    }
+
     .footer-links{
         display: flex;
         justify-content: center;
@@ -846,10 +850,13 @@ footer{
         }
     }
 
-    .footer-logos{
+    .footer-logos__mobile{
         display: flex;
         justify-content: center;
         gap: 20px;
+    }
+    .footer-logos__desktop{
+        display: none;
     }
 }
 

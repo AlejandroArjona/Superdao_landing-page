@@ -38,6 +38,10 @@
                     font-weight: 600;
                     line-height: normal;
                     gap: 44px;
+
+                    a:hover{
+                        color: #FFC803;
+                    }
                 }
             }
 
@@ -596,6 +600,36 @@
                     }
                 }
             }
+        }
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        .footer-logo__mobile{
+            display: none;
+        }
+        .footer-logo__desktop{
+            display: contents;
+        }
+        .footer-links{
+            column-gap: 56px;
+            p{
+                font-size: 22px;
+                line-height: normal;
+            }
+            a:hover{
+                color: #FFC803;
+            }
+        }
+        .footer-logos__mobile{
+            display: none;
+        }
+        .footer-logos__desktop{
+            display: flex;
+            column-gap: 20px;
         }
     }
 }
